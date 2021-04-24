@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f1f1;
+}
+
+#messageCo {
+  margin: auto auto 10px auto;
+  max-width: 1000px;
+  background: rgba(255, 255, 0, 0.3);
+  font-weight: 500;
+  color: rgb(173, 113, 0);
+  padding: 15px;
+  display: none;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  color: rgb(70, 70, 70);
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin: auto;
+  max-width: 1000px;
+  background: #ffffff;
+  padding: 15px;
+}
+
+/* ----------------------------------------Bloc de gauche */
+
+.bloc-left {
+  width: 50%;
+}
+
+/*---------------------- Formulaire */
+
+.bloc-id,
+.bloc-mdp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+label {
+  color: rgb(70, 70, 70);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  background: rgb(228, 227, 227);
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 485px;
+}
+input[type="text"] {
+  background: #ffffff;
+  border: 1px solid rgb(228, 227, 227);
+}
+input:focus {
+  border: 2px solid rgba(255, 3, 3, 0.5);
+}
+
+/*------------------ Grille de composition */
+
+.grille {
+  max-width: 255px;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 5px;
+  margin: 20px auto;
+}
+.case {
+  background: rgb(228, 227, 227);
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bolder;
+  width: 60px;
+}
+.case-active{
+  background: rgb(189, 189, 189);
+}
+button {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #f1f1f1;
+  background: #008cba;
+  cursor: pointer;
+}
+
+/*----------------- Bloc de droite */
+
+.bloc-aide-info {
+  margin: auto 0;
+}
+.aide {
+  margin-bottom: 25px;
+}
+.lien {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #008cba;
+}
+
+.info p {
+  padding: 15px 25px;
+  background: rgb(228, 227, 227);
+  border-radius: 5px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 908px) {
+  .bloc-left {
+    width: auto;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bloc-aide-info {
+    width: 300px;
+  }
+  .bloc-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
