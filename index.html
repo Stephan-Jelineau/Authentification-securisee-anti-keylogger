@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentification Javascript</title>
+    <script
+      src="https://kit.fontawesome.com/0801a29b76.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Authentification</h1>
+    <div id="messageCo"></div>
+    <section class="container">
+      <!-- Bloc de gauche -->
+
+      <div class="bloc-left">
+        <!------------------------ Formulaire -------------------->
+        <form id="form">
+          <div class="bloc-id">
+            <label for="identifiant">Identifiant</label>
+            <input
+              type="text"
+              name="login"
+              id="identifiant"
+              placeholder="Saisissez votre identifiant"
+              autofocus
+            />
+          </div>
+          <div class="bloc-mdp">
+            <label for="mot-de-passe">Mot de passe</label>
+            <input
+              type="password"
+              name="password"
+              id="mot-de-passe"
+              placeholder="Composez votre mot de passe"
+              readonly
+            />
+          </div>
+
+          <!-- Grille de composition -->
+
+          <div class="grille">
+            <div class="case" id="case0"></div>
+            <div class="case" id="case1"></div>
+            <div class="case" id="case2"></div>
+            <div class="case" id="case3"></div>
+            <div class="case" id="case4"></div>
+            <div class="case" id="case5"></div>
+            <div class="case" id="case6"></div>
+            <div class="case" id="case7"></div>
+            <div class="case" id="case8"></div>
+            <div class="case" id="case9"></div>
+            <div class="case" id="case10"></div>
+            <div class="case" id="case11"></div>
+            <div class="case" id="case12"></div>
+            <div class="case" id="case13"></div>
+            <div class="case" id="case14"></div>
+            <div class="case" id="case15"></div>
+          </div>
+
+          <div class="bloc-buttons">
+            <button type="submit" id="valider">Valider</button>
+            <button type="button" id="effacer">Effacer</button>
+          </div>
+        </form>
+      </div>
+
+      <!---------------------- Liens + info / Bloc de droite ------------------>
+
+      <div class="bloc-aide-info">
+        <div class="aide">
+          <a href="#" class="lien"
+            ><i class="far fa-question-circle"></i> Aide à la connexion</a
+          >
+          <a href="#" class="lien"
+            ><i class="fas fa-sign-out-alt"></i> Identifiant / Mot de passe
+            perdu</a
+          >
+          <a href="#" class="lien"
+            ><i class="fas fa-lock"></i> Sécurité Identifiant / Mot de passe</a
+          >
+        </div>
+        <div class="info">
+          <p>
+            <strong>Important</strong>: votre vigilance est <br />primordiale
+            pour assurer la sécurité de votre compte.
+          </p>
+        </div>
+      </div>
+
+      <!---------------->
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
