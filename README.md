@@ -1,5 +1,5 @@
 # Authentification-securisee-anti-keylogger
-First little project in Javascript during my training
+First little project in Vanilla Javascript during my training
 
 Here is the subject in french :
 
