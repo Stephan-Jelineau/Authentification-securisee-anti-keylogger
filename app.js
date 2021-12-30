@@ -85,3 +85,28 @@ function nettoyage() {
   identifiant.value = "";
   password.value = "";
 }
+
+/* récupération du formulaire et  réception des données de l'API à personnaliser selon votre besoin, un exemple ci-dessous */
+
+function dataForm(e){
+  
+  e.preventDefault();
+  // let formData = new FormData(e.target);
+  
+  // let url = "****************";
+  // let request = new Request(url, {
+  //   method : "POST",
+  //   body : formData
+  // });
+
+  // fetch(request)
+  //   .then((response) => response.json()
+  //   .then((data) => {
+
+  //     messageConnexion.style.display = "block";
+  //     messageConnexion.innerHTML = data.message;
+  //     console.log("Résultat de l'authentification :" + data.check);
+
+  //   }))
+  //   .catch((e) => console.log("Erreur : " + e));
+}
