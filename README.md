@@ -1,7 +1,7 @@
 # Authentification-securisee-anti-keylogger
 First little project in Vanilla Javascript during my training
 
-##Here is the subject in french :
+## Here is the subject in french :
 
 Sujet
 
@@ -16,10 +16,10 @@ Wireframes de l’application.
 
 Travail demandé
 
-###Page d’identification
+### Page d’identification
 
 - Code HTML
 - Code CSS
 
-###Le(s) script(s) javascript permettant de :
+### Le(s) script(s) javascript permettant de :
 • Générer le clavier (position des chiffres de 0 à 9 et touches vides)
