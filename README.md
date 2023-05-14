@@ -1,7 +1,7 @@
 **[CODEPEN link :)](https://codepen.io/stephan-jelineau/pen/BawYPmE)**
 
 # Authentification-securisee-anti-keylogger
-First little project in Vanilla Javascript during my training
+Secure Autentication no keylogger
 
 ## Here is the subject in french :
 
